@@ -7,6 +7,10 @@ $data = "mgoni gagebuli davaleba";
 
 $getResponse = getResponse($data, 200, 'application/json');
 
-echo $getResponse;
+echo $getResponse . "\n" . "\n";
+
+$getRequest = getHeaders($_SERVER);
+
+print_r($getRequest);
 
 ?>
