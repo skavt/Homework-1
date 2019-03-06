@@ -29,10 +29,6 @@ function getPort()
 
 function getMethod()
 {
-    if ($_SERVER['REQUEST_METHOD'] == 'GET')
-        $response = $_GET;
-    else if ($_SERVER['REQUEST_METHOD'] == 'POST')
-        $response = $_POST;
     return $_SERVER['REQUEST_METHOD'];
 }
 
