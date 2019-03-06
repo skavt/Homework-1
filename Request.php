@@ -7,7 +7,7 @@ function getHeaders()
         $defaultHeaders = substr($key, 0, 5);
         if($defaultHeaders == 'HTTP_') 
         {
-        $headersArray[$key] = $value; 
+            $headersArray[$key] = $value; 
         }  
     }
     return $headersArray;
